@@ -7,6 +7,5 @@ RUN chmod +x /usr/local/bin/frps && \
 
 COPY frps.ini /etc/frp/
 
-EXPOSE 80 443 4443
 CMD ["frps", "-c", "/etc/frp/frps.ini"]
 
